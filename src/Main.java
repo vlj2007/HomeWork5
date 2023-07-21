@@ -54,7 +54,6 @@ public class Main {
 
     }
 
-
     public static void task4(){
         System.out.println("Задача 4");
         int deliveryDistance = 101;
