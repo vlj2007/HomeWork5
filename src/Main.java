@@ -6,6 +6,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -64,10 +65,38 @@ public class Main {
         } else if(deliveryDistance >= 61 && deliveryDistance <= 100){
             System.out.println("Потребуется 3 дня");
         } else if (deliveryDistance > 100) {
-            System.out.println("Доставки нет производится");
+            System.out.println("Доставка нет производится");
         }
     }
 
-
-
+    public static void task5(){
+        System.out.println("Задача 5");
+        int monthNumber = 11;
+        String season;
+        switch (monthNumber){
+            case 12:
+            case 1:
+            case 2:
+                season = "Зима";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                season = "Весна";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                season = "Лето";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                season = "Осень";
+                break;
+            default:
+                season = "Такого месяца нет в календаре";
+        }
+        System.out.println(season +  " - " + monthNumber + " месяц.");
+    }
 }
