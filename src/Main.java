@@ -1,7 +1,10 @@
+import java.io.PrintStream;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -36,4 +39,19 @@ public class Main {
         }
 
     }
+
+    public static void task3(){
+        System.out.println("Задача 3");
+        int year = 2132;
+        boolean whatYear = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+        if (whatYear){
+            System.out.println(year + " год является високосным.");
+        } else {
+            System.out.println(year + " год не является високосным.");
+        }
+
+
+
+    }
+
 }
